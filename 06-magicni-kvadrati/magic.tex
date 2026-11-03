@@ -89,12 +89,15 @@ Primer magičnega kvadrata reda 3 je prikazan v tabeli ~\ref{table:mag3}. % skli
 \centering
 \caption{Magični kvadrat reda 3}
 \label{table:mag3}
+\large
 \begin{tabular}{|c|c|c|}
 \hline
 8 & 1 & 6 \\ \hline
 3 & 5 & 7 \\ \hline
 4 & 9 & 2 \\ \hline
+
 \end{tabular}
+\normalsize
 \end{table}
 % - napis nad tabelo: Magični kvadrat reda 3
 % - oznaka: table:mag3
@@ -209,11 +212,11 @@ in zato kvadrat ni normalen.
    števil (glej~(\ref{definicija:1}) na strani~\pageref{definicija:1}) enaka
    \( 1 + 2 + 3 + \ldots + n^2 = \Sigma_{k=1}^{n^2} k=\frac{1}{2}n^2(n^2+1)\). Ker imamo
    v kvadratu \(n\) vrstic z enako vsoto, je vsota števil v eni vrstici
-   enaka številu \(M_2(n)\).
+   enaka številu \(\mathcal{M}_2(n)\).
 \end{proof} % sklica: eq:numbers, eq:numbers
 % Konec dokaza
 
-Preprost račun pokaže, da je konstanti~(\ref{eq:mc}) analogna konstanta
+Preprost račun pokaže, da je konstanti~\eqref{eq:mc} analogna konstanta
 \(\mathcal{M}_2(n;A,D)\) za magični kvadrat, v katerem so nameščena števila
 \(A\), \(A+D\), \(A+2D\), \ldots, \(A+(n^2-1)D\), enaka 
 \begin{equation}
@@ -235,16 +238,15 @@ Preprost račun pokaže, da je konstanti~(\ref{eq:mc}) analogna konstanta
 
 Števila različnih normalnih magičnih kvadratov se nahajajo v tabeli~\ref{table:stevila}.
 
-\begin{table}[h]
+\begin{table}[!ht]
 \centering
 \caption{Število različnih normalnih magičnih kvadratov}
 \label{table:stevila}
-\begin{tabular}{lrrrrrr}
+\begin{tabular}{lcccccc}
 \toprule
 & \multicolumn{5}{c}{točna vrednost} & približek \\
-\cmidrule(lr){1-7}
-red & 1 & 2 & 3 & 4 & 5 & 6 \\
 \midrule
+red & 1 & 2 & 3 & 4 & 5 & 6 \\
 število kvadratov & 1 & 0 & 1 & 880 & 275305224
 & $(1{,}7745 \pm 0{,}0016)\cdot 10^{19}$ \\
 \bottomrule
@@ -272,30 +274,12 @@ sta za oceno uporabila simulacijo Monte Carlo in metode statistične mehanike.
 \newpage
 
 % Tu vstavite bibliografijo
-\begin{thebibliography}{9}
 
-\bibitem{berlekamp}
-E. R. Berlekamp, J. H. Conway, and R. K. Guy, Games in par-
-ticular, in Winning Ways for Your Mathematical Plays, vol. 2, Academic
-Press, London, 1982.
 
-\bibitem{bessy}
-B. F. de Bessy, Des quarrez magiques, De l’imprimerie Royale par Jean
-Anisson, Paris, 1693.
+\bibliographystyle{siam}
+\bibliography{magic}
 
-\bibitem{euler}
-L. Euler, De quadratis magicis, Commentationes arithmeticae, 2
-(1849), pp. 593–602.
 
-\bibitem{gardner}
-M. Gardner, Mathematical games, Scientific American, 234 (1976),
-pp. 118–122.
-
-\bibitem{pinn}
-K. Pinn and C. Wieczerkowski, Number of magic squares from pa-
-rallel tempering monte carlo, Int. J. Mod. Phys. C, 9 (1998), pp. 541–547.
-
-\end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
