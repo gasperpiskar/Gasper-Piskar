@@ -1,3 +1,7 @@
+# VSCode uporabniške nastavitve
+.vscode/
+
+# LaTeX
 *.aux
 *.bbl
 *.blg
@@ -11,3 +15,13 @@
 *.pyc
 *.snm
 *.synctex.gz
+
+# MacOS
+__MACOSX
+.DS_Store
+
+# Windows
+thumbs.db
+
+# Python
+__pycache__
