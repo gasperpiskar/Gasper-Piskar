@@ -16,7 +16,12 @@
 *.snm
 *.synctex.gz
 !magic.pdf
-!magic.resitev.pdf
+!magic-resitev.pdf
+!urnik-resitev.pdf
+!urnik.pdf
+!slika.pdf
+!matematika.pdf
+!matematika-resitev.pdf
 
 # MacOS
 __MACOSX
