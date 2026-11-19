@@ -8,13 +8,16 @@
 *.fdb_latexmk
 *.toc
 *.fls
+*.idx
+*.ilg
+*.ind
 *.log
 *.nav
 *.out
 *.pdf
-*.pyc
 *.snm
 *.synctex.gz
+*.synctex(busy)
 !magic.pdf
 !magic-resitev.pdf
 !urnik-resitev.pdf
@@ -26,6 +29,8 @@
 !navodila.pdf
 !PerrinPlot2.pdf
 !dokument.pdf
+!prosojnice-resitev.pdf
+!prosojnice.pdf
 
 # MacOS
 __MACOSX
